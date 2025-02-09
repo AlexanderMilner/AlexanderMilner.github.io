@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Email me at A.J.C.Milner @ sms.ed.ac.uk
 
 profile:
   align: right
