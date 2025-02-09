@@ -27,8 +27,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I started my PhD at the University of Edinburgh in September 2024 under the supervision of [Dr Dimitra Kosta](https://sites.google.com/view/dkosta) having graduated from my Masters in Mathematics in June 2024 from Durham University. I am funded by a School of Mathematics Studentship in the Algebra and Number Theory Research Group until 2028.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+During my time at Durham I completed a research project funded by the London Mathematical Society Research Bursary supervised by [Dr Jack Shotton](https://www.maths.dur.ac.uk/users/jack.g.shotton/) into invariant factors of elliptic curves as well as writing my masters thesis on the Polynomial Method in Combinatorics under the supervision of [Dr Dan Evans](https://www.durham.ac.uk/staff/daniel-evans/).
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My current research is focussing on computational and applied algebraic geometry, in particular, toric geometry and matroidal structures. I am currently writing a [Macaulay2](https://macaulay2.com/) package with [Ollie Clarke](https://sites.google.com/view/oclarke-homepage/) to compute every minimal Markov basis associated with a given configuration matrix.
+
+I spend most of my spare time either playing in orchestras or conducting them and I currently hold the position of conductor of the Edinburgh University Sinfonia.
