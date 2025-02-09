@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Email: A.J.C.Milner \[at\] sms.ed.ac.uk
+subtitle: Email: A.J.C.Milner @ sms.ed.ac.uk
 
 profile:
   align: right
