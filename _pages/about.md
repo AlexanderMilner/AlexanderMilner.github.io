@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: Email me at A.J.C.Milner @ sms.ed.ac.uk
 
