@@ -89,13 +89,8 @@ The second key piece of graph theory we will need is perfect matchings on a bipa
 
 Now we can finally state the exact condition.
 
-```{theorem, label, name="Theorem name"}
-A matrix $$M$$ can be unlocked if and only if $$G_M$$ contains a perfect matching.
-```
-
-\begin{thm}
-A matrix $$M$$ can be unlocked if and only if $$G_M$$ contains a perfect matching.
-\end{thm}
+**Theorem:**
+*A matrix $$M$$ can be unlocked if and only if $$G_M$$ contains a perfect matching.*
 
 The final step of the proof uses an extraordinary and incredibly useful result called the Combinatorial Nullstellensatz, which first appeared in Alon's paper {% cite Alon_1999 %} and crops up all the time in algebraic geometry, combinatorics and graph theory however it is slightly too wordy to include in this overview.
 
