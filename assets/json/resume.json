@@ -65,6 +65,14 @@
       "summary": "Awarded annually on the recommendation of the Board of Examiners in Mathematical Sciences to a student graduating with a MMath Master of Mathematics who has the highest overall performance as measured by the 2H/3H/4H weighted average."
     }
   ],
+  "Research Experience": [
+    {
+      "title": "Research project funded by London Mathematical Society Undergraduate Research Bursary"
+      "startDate": "2023-07-01",
+      "endDate": "2023-09-23",
+      "summary": "Under supervision of Dr Jack Shotton, studied the density of primes such that the F_p-rational group of points on an elliptic curve without complex multiplication has full j-torsion. Currently writing up paper to be submitted to the Involve journal in due course."
+    },
+  ],
   "certificates": [
   ],
   "publications": [
