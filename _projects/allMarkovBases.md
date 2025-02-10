@@ -14,6 +14,12 @@ header-includes:
   - \usepackage{amsmath}
   - \DeclareMathOperator{\det}{det}
   - \DeclareMathOperator{\ker}{ker}
+  - \newcommand{\CC}{\mathbb C}
+  - \newcommand{\NN}{\mathbb N}
+  - \newcommand{\PP}{\mathbb P}
+  - \newcommand{\QQ}{\mathbb Q}
+  - \newcommand{\RR}{\mathbb R}
+  - \newcommand{\ZZ}{\mathbb Z}
 ---
 
 <div class="row">
