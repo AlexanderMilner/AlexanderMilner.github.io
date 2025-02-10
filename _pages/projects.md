@@ -2,7 +2,7 @@
 layout: page
 title: Research
 permalink: /research/
-description: Mathematical things I've been working on.
+description:
 nav: true
 nav_order: 3
 display_categories: [Projects, Recreational, Coding]
