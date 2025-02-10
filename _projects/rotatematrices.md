@@ -26,14 +26,15 @@ For example, the matrix $$ \pi = \begin{pmatrix} 3 & -1 & -4 \\ 1 & 5 & -9 \\ 2 
         -6 & 5 & 2
     \end{pmatrix}$, which has determinant $-27$ and thus is invertible. So $\pi$ can indeed be unlocked.
     
-Now let's look at another example. Take $\gamma =
-    \begin{pmatrix}
-        2 & -7 & 5 \\
-        -3 & -8 & 11 \\
-        2 & 0 & -2
-    \end{pmatrix}$. 
+Now let's look at another example. Take $$\gamma =
+    \begin{pmatrix} 
+    2 & -7 & 5 \\ 
+    -3 & -8 & 11 \\
+    2 & 0 & -2
+    \end{pmatrix}$$. 
     
-    Now, however hard you try, you will never be able to rotate the rows of $\gamma$ such that its determinant is non-zero and thus $\gamma$ can never be unlocked. A clever way to see why this happens is to notice that the digits in each row of $\gamma$ add up to $0$. Thus, $(1,1,1)$ is an eigenvector of $\sigma(\gamma)$  with eigenvalue $0$ no matter how we rotate the rows. Since the determinant of a matrix is equal to the product of its eigenvalues then the determinant of $\gamma$ is always zero. 
+
+Now, however hard you try, you will never be able to rotate the rows of $\gamma$ such that its determinant is non-zero and thus $\gamma$ can never be unlocked. A clever way to see why this happens is to notice that the digits in each row of $\gamma$ add up to $0$. Thus, $(1,1,1)$ is an eigenvector of $\sigma(\gamma)$  with eigenvalue $0$ no matter how we rotate the rows. Since the determinant of a matrix is equal to the product of its eigenvalues then the determinant of $\gamma$ is always zero. 
     
 Using the same logic, we can see that any matrix where all its rows add up to $0$
 But, as we will see, the rows of a matrix all adding up to $0$ is not a necessary condition for a matrix not to be able to be unlocked by row rotations.
