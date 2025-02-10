@@ -66,7 +66,7 @@ Having seen these different examples, it might not even seem like there would be
 
 Assume we are a given an $$n \times n$$ matrix $$M$$. We will assume we are working over the complex numbers for now as we will need $$n$$ distinct roots of unity. We start by defining polynomials
 begin{equation}
-g_i(x_i) := \sum_{j=1}^{n} M_{ij} x_i^{j-1} \nonumber
+g_i(x_i) := \sum_{j=1}^{n} M_{ij} x_i^{j-1}
 end{equation}
 for $$i \in \{1,...,n\}$$. All we need to know about the $$g_i$$'s is that they each encode the information of the $$i$$th row of our matrix $$M$$ in polynomial form. We now define another polynomial
 \begin{equation*}
@@ -80,7 +80,7 @@ While this is an exact condition on $$M$$ being able to be unlocked, which is wh
 
 ### A little bit of graph theory
 
-A bipartite graph is a graph whose vertices are partitioned into two sets where no two vertices lying in the same set share an edge. Figure 1 at the top of the page is an example of a bipartite graph. So let's define a bipartite graph with the first edge set being $$\{1,...,n\}$$ and the second being the set of $$n$$th roots of unity which we will denote $$\mu_n$$. Now, let $$i \in \{1,...,n\}$$ and let $$z$$ be an $$n$$th root of unity. Given our matrix $$M$$ and our polynomials $$g_i$$, there is an edge connecting $$i$$ and $$z$$ if and only if $$g_i(z) \neq 0$$.
+A bipartite graph is a graph whose vertices are partitioned into two sets where no two vertices lying in the same set share an edge. So let's define a bipartite graph with the first edge set being $$\{1,...,n\}$$ and the second being the set of $$n$$th roots of unity which we will denote $$\mu_n$$. Now, let $$i \in \{1,...,n\}$$ and let $$z$$ be an $$n$$th root of unity. Given our matrix $$M$$ and our polynomials $$g_i$$, there is an edge connecting $$i$$ and $$z$$ if and only if $$g_i(z) \neq 0$$. Figure 1 at the top of the page shows the bipartite graph we have constructed corresponding to the matrix $$ \begin{pmatrix} 1 & 0 & 1 & 0 \\ 1 & 1 & 1 & 1 \\ 2 & 0 & 2 & 5 \\ -1 & 1 & -1 & 1 \end{pmatrix}$$ where $$\theta^2 = -1$$.
 
 
 
