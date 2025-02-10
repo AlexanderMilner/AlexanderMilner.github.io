@@ -19,7 +19,7 @@ This project is designed to give an introduction to [this write-up](assets/pdf/U
 
 A slightly random but fun question we can ask is: given a matrix, when can we rotate its rows to make it invertible? We will say that a matrix can be unlocked if there is a way we can rotate its rows so that it becomes invertible.
 
-For example, the matrix  $$ \pi = \begin{pmatrix} 3 & -1 & -4 \\ 1 & 5 & -9 \\ 2 & -6 & 5 \end{pmatrix}$$ is not currently invertible since $$\det(\pi)=0$$. However, if we rotate the $$3$$rd row to the left by one step, we get the matrix  $$\begin{pmatrix}
+For example, the matrix  $$ \pi = \begin{pmatrix} 3 & -1 & -4 \\ 1 & 5 & -9 \\ 2 & -6 & 5 \end{pmatrix}$$ is not currently invertible since $$\det(\pi)=0$$. However, if we rotate the 3rd row to the left by one step, we get the matrix  $$\begin{pmatrix}
         3 & -1 & -4 \\
         1 & 5 & -9 \\
         -6 & 5 & 2
@@ -33,8 +33,16 @@ Now let's look at another example. Take $$\gamma =
     \end{pmatrix}$$. 
     
 
-Now, however hard you try, you will never be able to rotate the rows of $$\gamma$$ such that its determinant is non-zero and thus $$\gamma$$ can never be unlocked. A clever way to see why this happens is to notice that the digits in each row of $$\gamma$$ add up to $$0$$. Thus, $$(1,1,1)$$ is an eigenvector of $$\gamma$$  with eigenvalue $$0$$ no matter how we rotate the rows. Since the determinant of a matrix is equal to the product of its eigenvalues then the determinant of $$\gamma$$ is always zero. 
+Now, however hard you try, you will never be able to rotate the rows of $$\gamma$$ such that its determinant is non-zero and thus $$\gamma$$ can never be unlocked. A clever way to see why this happens is to notice that the digits in each row of $$\gamma$$ add up to $$0$$. Thus, $$(1,1,1)$$ is an eigenvector of $$\gamma$$  with eigenvalue 0 no matter how we rotate the rows. Since the determinant of a matrix is equal to the product of its eigenvalues then the determinant of $$\gamma$$ is always zero. 
     
-Using the same logic, we can see that any matrix where all its rows add up to $$0$$.
-But, as we will see, the rows of a matrix all adding up to $0$ is not a necessary condition for a matrix not to be able to be unlocked by row rotations.
+Using the same logic, we can see that any matrix where all its rows add up to 0 can never be unlocked. We might conjecture that if the rows of a matrix do not all add up to 0, then it can be unlocked. However, if we take
+\begin{equation}
+\begin{pmatrix}
+1 & 0 & 1 & 0 \\
+1 & 0 & 1 & 0 \\
+1 & 0 & 1 & 0 \\
+1 & 0 & 1 & 0 
+\end{pmatrix}
+\end{equation}
+we see that two of the rows will always be the same no matter how we rotate them so the determinant will always be zero since the rows are not linearly independent. Can we even give an exact condition on when a matrix can be unlocked?
 
