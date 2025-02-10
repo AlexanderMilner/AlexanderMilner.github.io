@@ -13,7 +13,6 @@ output:
 header-includes:
   - \usepackage{amsmath}
   - \DeclareMathOperator{\det}{det}
-  - \newtheorem{thm}{Theorem}
 ---
 
 
@@ -89,6 +88,10 @@ The second key piece of graph theory we will need is perfect matchings on a bipa
 </div>
 
 Now we can finally state the exact condition.
+
+```{theorem, label, name="Theorem name"}
+A matrix $$M$$ can be unlocked if and only if $$G_M$$ contains a perfect matching.
+```
 
 \begin{thm}
 A matrix $$M$$ can be unlocked if and only if $$G_M$$ contains a perfect matching.
