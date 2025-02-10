@@ -32,4 +32,4 @@ My current research is focussing on computational and applied algebraic geometry
 
 I spend most of my spare time either playing in orchestras or conducting them and I currently hold the position of conductor of the Edinburgh University Sinfonia. Whilst at Durham, I conducted the Durham University Symphony Orchestra from September 2021 until June 2024 as well the Durham Choral Society, the Durham Opera Ensemble and the Durham Light Opera Group.
 
-My government name is Alex(ander) but my nickname is Monty and I am to be called either!
+My government name is Alex(ander) but my nickname is Monty and I am happy to be called either!
