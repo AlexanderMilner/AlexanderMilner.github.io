@@ -8,10 +8,12 @@ category: Research-related
 related_publications: true
 ---
 
-Okay its time to do some maths: $f(x_1)=x_1^3+\sqrt{2+x_1} \in \mathbb{Q}[x_1]$
+Okay its time to do some maths:
 
 **The Cauchy-Schwarz Inequality**\
 $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+and
+$$f(x_1)=x_1^3+\sqrt{2+x_1} \in \mathbb{Q}[x_1]$$
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
