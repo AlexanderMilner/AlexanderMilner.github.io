@@ -4,12 +4,12 @@ title: Rotating matrices
 description: Does an invertible matrix stay invertible if you rotate its rows?
 img: assets/img/12.jpg
 importance: 1
-category: Research-related
+category: Projects
 related_publications: true
 output: 
   bookdown::pdf_book:
     latex_engine: lualatex
-
+    
 header-includes:
   - \usepackage{amsmath}
   - \DeclareMathOperator{\det}{det}
