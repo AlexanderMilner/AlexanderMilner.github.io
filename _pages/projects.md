@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Projects
-permalink: /projects/
+title: Research
+permalink: /research/
 description: Mathematical things I've been working on.
 nav: true
 nav_order: 3
-display_categories: [Research-related, Recreational, Coding]
+display_categories: [Projects, Recreational, Coding]
 horizontal: false
 ---
 
