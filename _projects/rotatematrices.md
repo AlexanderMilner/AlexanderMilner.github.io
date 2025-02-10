@@ -18,7 +18,7 @@ header-includes:
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="/assets/img/bipartite4.jpg" title="Bipartite graph" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="/assets/img/bipartite4.png" title="Bipartite graph" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -64,14 +64,12 @@ Having seen these different examples, it might not even seem like there would be
 
 ### A little bit of algebraic geometry
 
-Assume we are a given an $$n \times n$$ matrix $$M$$. We will assume we are working over the complex numbers for now as we will need $$n$$ distinct roots of unity. We start by defining polynomials
-begin{equation}
-g_i(x_i) := \sum_{j=1}^{n} M_{ij} x_i^{j-1}
-end{equation}
+Assume we are a given an $$n \times n$$ matrix $$M$$. We will assume we are working over the complex numbers for now as we will need $$n$$ distinct roots of unity. We start by defining polynomials \
+$$ g_i(x_i) := \sum_{j=1}^{n} M_{ij} x_i^{j-1} $$ \
 for $$i \in \{1,...,n\}$$. All we need to know about the $$g_i$$'s is that they each encode the information of the $$i$$th row of our matrix $$M$$ in polynomial form. We now define another polynomial
-\begin{equation*}
+```math
 f_M(x_1,...,x_n) := \prod_{1 \le j < k \le n} (x_k-x_j) \sum_{i=1}^{n} g_i(x_i)
-\end{equation*}
+```
 While $$f_M$$ may look fairly arbitrary, its key features are that it contains all the information about our matrix $$M$$ (both the elements of $$M$$ and their positions) and it vanishes on any input $$(x_1,...,x_n)$$ where $$x_i = x_j$$ for some $$i \neq j$$. 
 
 The magic part is that if we expand $$f_M$$ into a sum of monomials modulo the ideal $$ \mathcal{I} := \langle x_1^n-1,...,x_n^n-1 \rangle$$, the coefficient of each monomial is the determinant of the matrix given by rotating the rows of $$M$$ according to said monomial up to a sign change. Thus $$M$$ cannot be unlocked if and only if $$f_M \in \mathcal{I}$$.
