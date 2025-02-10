@@ -441,6 +441,11 @@ ninja.data = [{
           description: "Does an invertible matrix stay invertible if you rotate its rows?",
           section: "Projects",handler: () => {
               window.location.href = "/projects/rotatematrices/";
+            },},{id: "projects-rotating-matrices",
+          title: 'Rotating matrices',
+          description: "Does an invertible matrix stay invertible if you rotate its rows?",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/rotatematrices2/";
             },},{
         id: 'social-email',
         title: 'email',
