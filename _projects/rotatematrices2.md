@@ -16,7 +16,9 @@ header-includes:
 ---
 
 
-\begin{equation}
-\pi = \begin{pmatrix}  3 & -1 & -4 \\ 1 & 5 & -9 \\ 2 & -6 & 5 \end{pmatrix}
-\end{equation}
+\begin{equation} \pi = \begin{pmatrix}  
+3 & -1 & -4 \\ 
+1 & 5 & -9 \\ 
+2 & -6 & 5 
+\end{pmatrix} \end{equation}
 
