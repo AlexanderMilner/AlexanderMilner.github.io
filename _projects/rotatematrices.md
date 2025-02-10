@@ -23,7 +23,7 @@ The matrix $\pi=
         3 & -1 & -4 \\
         1 & 5 & -9 \\
         2 & -6 & 5
-    \end{pmatrix} \in M_3(\mathbb{Q})$ can be unlocked by row rotations as even though $\operatorname{det}(\pi)=0$, $r_3(\pi)=\pi[e_3]=
+    \end{pmatrix} \in M_3(\mathbb{Q})$ can be unlocked by row rotations as even though $\DeclareMathOperator{det}(\pi)=0$, $r_3(\pi)=\pi[e_3]=
     \begin{pmatrix}
         3 & -1 & -4 \\
         1 & 5 & -9 \\
