@@ -80,7 +80,20 @@ While this is an exact condition on $$M$$ being able to be unlocked, which is wh
 
 ### A little bit of graph theory
 
-A bipartite graph is a graph whose vertices are partitioned into two sets where no two vertices lying in the same set share an edge. So let's define a bipartite graph with the first edge set being $$\{1,...,n\}$$ and the second being the set of $$n$$th roots of unity which we will denote $$\mu_n$$. Now, let $$i \in \{1,...,n\}$$ and let $$z$$ be an $$n$$th root of unity. Given our matrix $$M$$ and our polynomials $$g_i$$, there is an edge connecting $$i$$ and $$z$$ if and only if $$g_i(z) \neq 0$$. Figure 1 at the top of the page shows the bipartite graph we have constructed corresponding to the matrix $$ \begin{pmatrix} 1 & 0 & 1 & 0 \\ 1 & 1 & 1 & 1 \\ 2 & 0 & 2 & 5 \\ -1 & 1 & -1 & 1 \end{pmatrix}$$ where $$\theta^2 = -1$$.
+We will need two key pieces of graph theory to get a nic exact condition on when our matrix $$M$$ can be unlocked.
+
+The first key piece of graph theory we will need is bipartite graphs which are graphs whose vertices are partitioned into two sets where no two vertices lying in the same set share an edge. So let's define a bipartite graph with the first edge set being $$\{1,...,n\}$$ and the second being the set of $$n$$th roots of unity which we will denote $$\mu_n$$. Now, let $$i \in \{1,...,n\}$$ and let $$z$$ be an $$n$$th root of unity. Given our matrix $$M$$ and our polynomials $$g_i$$, there is an edge connecting $$i$$ and $$z$$ if and only if $$g_i(z) \neq 0$$. Figure 1 at the top of the page shows the bipartite graph we have constructed corresponding to the matrix $$ \begin{pmatrix} 1 & 0 & 1 & 0 \\ 1 & 1 & 1 & 1 \\ 2 & 0 & 2 & 5 \\ -1 & 1 & -1 & 1 \end{pmatrix}$$ where $$\theta^2 = -1$$.
+
+The second key piece of graph theory we will need is perfect matchings on a bipartite graph. As you might have guessed from the name, a perfect matching
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="/assets/img/perfectmatching.png" title="Bipartite graph" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Figure 2: A bipartite graph which has a perfect matching given by the blue and red edges.
+</div>
 
 
 
