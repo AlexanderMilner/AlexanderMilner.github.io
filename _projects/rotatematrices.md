@@ -15,8 +15,6 @@ header-includes:
   - \DeclareMathOperator{\det}{det}
 ---
 
-[Graphs](/assets/img/bipartite4.png)
-
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -30,11 +28,11 @@ header-includes:
 
 This project is designed to give an introduction to [this write-up](/assets/pdf/Unlocking_Matrices.pdf), which is based on the final chapter of my [masters dissertation](/assets/pdf/PM.pdf).
 
-# Unlocking matrices by row rotations
+## Unlocking matrices by row rotations
 
 A slightly random but fun question we can ask is: given a matrix, when can we rotate its rows to make it invertible? We will say that a matrix can be unlocked if there is a way we can rotate its rows so that it becomes invertible.
 
-## Examples
+### Examples
 
 For example, the matrix  $$ \pi = \begin{pmatrix} 3 & -1 & -4 \\ 1 & 5 & -9 \\ 2 & -6 & 5 \end{pmatrix}$$ is not currently invertible since $$\det(\pi)$$=0. However, if we rotate the 3rd row to the left by one step, we get the matrix  
 $$\begin{pmatrix}
@@ -64,7 +62,7 @@ where $$a$$,$$b$$,$$c$$ and $$d$$ can be any numbers. We can notice that the fir
 
 Having seen these different examples, it might not even seem like there would be an exact condition on when a matrix can be unlocked? Surprisingly, there is - we just need the help of a little bit of algebraic geometry and graph theory. The original idea for the following construction comes from {% cite KS_2004 %} which has been built-upon in {% cite BKS_2014 %}, however, both focus on a small class of matrices and only over the complex numbers. In [this write-up](/assets/pdf/Unlocking_Matrices.pdf), we extend these ideas to work for any matrix over any field.
 
-## A little bit of algebraic geometry
+### A little bit of algebraic geometry
 
 Assume we are a given an $$n \times n$$ matrix $$M$$. We will assume we are working over the complex numbers for now as we will need $$n$$ distinct roots of unity. We start by defining polynomials
 begin{equation}
@@ -80,9 +78,9 @@ The magic part is that if we expand $$f_M$$ into a sum of monomials modulo the i
 
 While this is an exact condition on $$M$$ being able to be unlocked, which is what we were looking for, $$f_M$$ is not a very intuitive polynomial and we haven't used any graph theory yet!
 
-## A little bit of graph theory
+### A little bit of graph theory
 
-A bipartite graph is a graph whose vertices are partitioned into two sets where no two vertices lying in the same set share an edge. Figure 1 at the top of the page is an example of a bipartite graph. So let's define a bipartite graph with the first edge set being $$\{1,...,n\}$$ and the second being the set of $$n$$th roots of unity which we will denote $$\mu_n$$. Now, given our matrix $$M$$ and our polynomials $$g_i$$,
+A bipartite graph is a graph whose vertices are partitioned into two sets where no two vertices lying in the same set share an edge. Figure 1 at the top of the page is an example of a bipartite graph. So let's define a bipartite graph with the first edge set being $$\{1,...,n\}$$ and the second being the set of $$n$$th roots of unity which we will denote $$\mu_n$$. Now, let $$i \in \{1,...,n\}$$ and let $$z$$ be an $$n$$th root of unity. Given our matrix $$M$$ and our polynomials $$g_i$$, there is an edge connecting $$i$$ and $$z$$ if and only if $$g_i(z) \neq 0$$.
 
 
 
