@@ -24,7 +24,7 @@
   "education": [
     {
       "institution": "The University of Edinburgh",
-      "location": "Edinburgh, Scotland, United Kingdom",
+      "location": "Scotland, UK",
       "url": "https://www.ed.ac.uk/",
       "area": "Mathematics (Algebra and Number Theory Research Group)",
       "studyType": "PhD",
@@ -35,7 +35,7 @@
     },
     {
       "institution": "Durham University",
-      "location": "Durham, United Kingdom",
+      "location": "England, UK",
       "url": "https://www.durham.ac.uk/",
       "area": "Mathematics",
       "studyType": "MMath Master of Mathematics",
@@ -46,7 +46,7 @@
     },
     {
       "institution": "Kings College School, Wimbledon",
-      "location": "London, United Kingdom",
+      "location": "London, UK",
       "url": "https://www.kcs.org.uk/",
       "area": "",
       "studyType": "International Baccalaureate",
