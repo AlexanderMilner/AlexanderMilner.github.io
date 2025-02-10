@@ -14,6 +14,8 @@ header-includes:
   - \usepackage{amsmath}
 ---
 
+This project is based on [this write-up](assets/pdf/Unlocking_Matrices.pdf) of the final chapter of my [masters dissertation](assets/pdf/PM.pdf).
+
 Okay its time to do some maths:
 
 **The Cauchy-Schwarz Inequality**\
