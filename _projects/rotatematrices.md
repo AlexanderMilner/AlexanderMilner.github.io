@@ -101,7 +101,8 @@ The final step of the proof uses an extraordinary and incredibly useful result c
 
 ### Conclusion
 
+While this connection between when matrices can be unlocked and when bipartite graphs have perfect matchings seems a bit magical at first, it seems less random when it is put in context by Kézdy and Snevily's paper {% cite KS_2004 %}.
 
+However there are more many questions we could go on to ask. What happens if we allow both row and column rotations? What happens if we are allowed to permute the elements of our matrix at will? 
 
-
-
+All is revealed in [this write-up](/assets/pdf/Unlocking_Matrices.pdf) and we in fact answer the latter question before the former using lots of graph theory along the way.
