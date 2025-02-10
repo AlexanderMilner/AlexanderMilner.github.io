@@ -45,5 +45,5 @@ a & b & c & d
 \end{pmatrix}$$
 where $$a$$,$$b$$,$$c$$ and $$d$$ can be any numbers. We can notice that the first 3 rows of $$\rho$$ will never be linearly independent no matter how we rotate them and thus the determinant will always be zero.
 
-Having seen these different examples, it might not even seem like there would be an exact condition on when a matrix can be unlocked? Surprisingly, there is - we just need the help of a little bit of algebraic geometry and graph theory (although for the proofs and the nitty gritty details see [this write-up](/assets/pdf/Unlocking_Matrices.pdf)).
+Having seen these different examples, it might not even seem like there would be an exact condition on when a matrix can be unlocked? Surprisingly, there is - we just need the help of a little bit of algebraic geometry and graph theory (although for the proofs and the nitty gritty details see [this write-up](/assets/pdf/Unlocking_Matrices.pdf)). The original construction comes from {% cite KS_2004 %}.
 
