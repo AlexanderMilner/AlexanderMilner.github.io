@@ -431,6 +431,11 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-computing-every-minimal-markov-basis",
+          title: 'Computing every minimal Markov basis',
+          description: "A Macaulay2 package to compute every minimal Markov basis associated with a configuration matrix",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/allMarkovBases/";
             },},{id: "projects-rotating-matrices",
           title: 'Rotating matrices',
           description: "Does an invertible matrix stay invertible if you rotate its rows?",
