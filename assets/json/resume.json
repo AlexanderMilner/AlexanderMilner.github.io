@@ -63,15 +63,36 @@
       "awarder": "Durham University Department of Mathematical Sciences",
       "url": "",
       "summary": "Awarded annually on the recommendation of the Board of Examiners in Mathematical Sciences to a student graduating with a MMath Master of Mathematics who has the highest overall performance as measured by the 2H/3H/4H weighted average."
+    },
+    {
+      "title": "Simon Marais Mathematics Competition",
+      "awarder": "Simon Marais Foundation",
+      "summary": "Competed in the 2023 and 2024 competitions coming 9th and 7th in the pairs division and winning A$800 and A$1600 respectively"
     }
   ],
-  "Research Experience": [
+  "Research": [
     {
-      "title": "Research project funded by London Mathematical Society Undergraduate Research Bursary"
+      "title": "Research project funded by London Mathematical Society Undergraduate Research Bursary",
       "startDate": "2023-07-01",
       "endDate": "2023-09-23",
       "summary": "Under supervision of Dr Jack Shotton, studied the density of primes such that the F_p-rational group of points on an elliptic curve without complex multiplication has full j-torsion. Currently writing up paper to be submitted to the Involve journal in due course."
     },
+    {
+      "title": "Masters Dissertation",
+      "startDate": "2023-10-05",
+      "endDate": "2024-04-15",
+      "summary": "Under supervision of Dr Dan Evans, investigated applications of the Polynomial Method to Combinatorics. Extended results by Kezdy and Snevily and used the findings to prove a new result classifying when elements in a matrix can be rearranged to make said matrix invertible using commutative algebra."
+    }
+  ],
+  "Teaching": [
+    {
+      "title": "Edinburgh University Tutorials",
+      "summary": "Ran workshops for Fundamentals of Pure Maths and Introduction to Number Theory courses as well as marking assignments."
+    },
+    {
+      "title": "Durham University Tutorials",
+      "summary": "Taught weekly Calculus tutorials and marked first year assignments at Durham University."
+    }
   ],
   "certificates": [
   ],
