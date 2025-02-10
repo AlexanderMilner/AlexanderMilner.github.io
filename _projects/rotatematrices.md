@@ -18,6 +18,16 @@ header-includes:
 [Graphs](/assets/img/bipartite4.png)
 
 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="/assets/img/bipartite4.jpg" title="Bipartite graph" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Figure 1: A bipartite graph.
+</div>
+
+
 This project is designed to give an introduction to [this write-up](/assets/pdf/Unlocking_Matrices.pdf), which is based on the final chapter of my [masters dissertation](/assets/pdf/PM.pdf).
 
 # Unlocking matrices by row rotations
