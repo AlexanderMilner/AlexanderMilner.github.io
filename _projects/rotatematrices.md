@@ -8,7 +8,7 @@ category: Research-related
 related_publications: true
 ---
 
-Okay its time to do some maths: $f(x)=x^3+\sqrt{2+x} \in \mathbb{Q}[x]$
+Okay its time to do some maths: $f(x_1)=x_1^3+\sqrt{2+x_1} \in \mathbb{Q}[x_1]$
 
 **The Cauchy-Schwarz Inequality**\
 $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
