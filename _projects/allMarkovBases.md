@@ -6,6 +6,14 @@ img: assets/img/bigfiber.png
 importance: 3
 category: Projects
 related_publications: true
+output: 
+  bookdown::pdf_book:
+    latex_engine: lualatex
+    
+header-includes:
+  - \usepackage{amsmath}
+  - \DeclareMathOperator{\det}{det}
+  - \DeclareMathOperator{\ker}{ker}
 ---
 
 <div class="row">
