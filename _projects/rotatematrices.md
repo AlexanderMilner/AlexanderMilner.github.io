@@ -13,6 +13,7 @@ output:
 header-includes:
   - \usepackage{amsmath}
   - \DeclareMathOperator{\det}{det}
+  - \newtheorem{theorem}{Theorem}
 ---
 
 
@@ -64,12 +65,9 @@ Having seen these different examples, it might not even seem like there would be
 
 ### A little bit of algebraic geometry
 
-Assume we are a given an $$n \times n$$ matrix $$M$$. We will assume we are working over the complex numbers for now as we will need $$n$$ distinct roots of unity. We start by defining polynomials \
-$$ g_i(x_i) := \sum_{j=1}^{n} M_{ij} x_i^{j-1} $$ \
-for $$i \in \{1,...,n\}$$. All we need to know about the $$g_i$$'s is that they each encode the information of the $$i$$th row of our matrix $$M$$ in polynomial form. We now define another polynomial
-```math
-f_M(x_1,...,x_n) := \prod_{1 \le j < k \le n} (x_k-x_j) \sum_{i=1}^{n} g_i(x_i)
-```
+Assume we are a given an $$n \times n$$ matrix $$M$$. We will assume we are working over the complex numbers for now as we will need $$n$$ distinct roots of unity. We start by defining polynomials
+$$ g_i(x_i) := \sum_{j=1}^{n} M_{ij} x_i^{j-1} $$
+for $$i \in \{1,...,n\}$$. All we need to know about the $$g_i$$'s is that they each encode the information of the $$i$$th row of our matrix $$M$$ in polynomial form. We now define another polynomial ```math f_M(x_1,...,x_n) := \prod_{1 \le j < k \le n} (x_k-x_j) \sum_{i=1}^{n} g_i(x_i) ```
 While $$f_M$$ may look fairly arbitrary, its key features are that it contains all the information about our matrix $$M$$ (both the elements of $$M$$ and their positions) and it vanishes on any input $$(x_1,...,x_n)$$ where $$x_i = x_j$$ for some $$i \neq j$$. 
 
 The magic part is that if we expand $$f_M$$ into a sum of monomials modulo the ideal $$ \mathcal{I} := \langle x_1^n-1,...,x_n^n-1 \rangle$$, the coefficient of each monomial is the determinant of the matrix given by rotating the rows of $$M$$ according to said monomial up to a sign change. Thus $$M$$ cannot be unlocked if and only if $$f_M \in \mathcal{I}$$.
@@ -82,7 +80,7 @@ We will need two key pieces of graph theory to get a nic exact condition on when
 
 The first key piece of graph theory we will need is bipartite graphs which are graphs whose vertices are partitioned into two sets where no two vertices lying in the same set share an edge. So let's define a bipartite graph $$G_M$$ with the first edge set being $$\{1,...,n\}$$ and the second being the set of $$n$$th roots of unity which we will denote $$\mu_n$$. Now, let $$i \in \{1,...,n\}$$ and let $$z$$ be an $$n$$th root of unity. Given our matrix $$M$$ and our polynomials $$g_i$$, there is an edge connecting $$i$$ and $$z$$ if and only if $$g_i(z) \neq 0$$. Figure 1 at the top of the page shows the bipartite graph $$G_M$$ where $$ \begin{pmatrix} 1 & 0 & 1 & 0 \\ 1 & 1 & 1 & 1 \\ 2 & 0 & 2 & 5 \\ -1 & 1 & -1 & 1 \end{pmatrix}$$ and $$\theta^2 = -1$$.
 
-The second key piece of graph theory we will need is perfect matchings on a bipartite graph. As you might have guessed from the name, a perfect matching on a bipartite graph with $$2n$$ vertices is $$n$$ edges which touch all vertices in the graph. A perfect matching is given in Figure 2.
+The second key piece of graph theory we will need is perfect matchings on a bipartite graph. As you might have guessed from the name, a perfect matching on a bipartite graph with $$2n$$ vertices is $$n$$ edges which touch all vertices in the graph. A perfect matching is demonstrated in Figure 2.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -93,7 +91,17 @@ The second key piece of graph theory we will need is perfect matchings on a bipa
     Figure 2: A bipartite graph which has a perfect matching given by the blue and red edges.
 </div>
 
-And we're done! Our matrix $$M$$ can be unlocked if and only if $$G_M$$ contains a perfect matching. The final step of the proof uses an extraordinary and incredibly useful result called the Combinatorial Nullstellensatz, which first appeared in Alon's paper {% cite Alon_1999 %} and crops up all the time in algebraic geometry, combinatorics and graph theory however it is slightly too wordy to include in this overview.
+Now we can finally state the exact condition.
+
+\begin{theorem}
+A matrix $$M$$ can be unlocked if and only if $$G_M$$ contains a perfect matching.
+\end{theorem}
+
+The final step of the proof uses an extraordinary and incredibly useful result called the Combinatorial Nullstellensatz, which first appeared in Alon's paper {% cite Alon_1999 %} and crops up all the time in algebraic geometry, combinatorics and graph theory however it is slightly too wordy to include in this overview.
+
+### Conclusion
+
+
 
 
 
