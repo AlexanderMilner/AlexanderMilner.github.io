@@ -15,7 +15,7 @@ header-includes:
   - \DeclareMathOperator{\det}{det}
 ---
 
-[Graphs](assets/img/bipartite4.png)
+[Graphs](/assets/img/bipartite4.png)
 
 
 This project is designed to give an introduction to [this write-up](/assets/pdf/Unlocking_Matrices.pdf), which is based on the final chapter of my [masters dissertation](/assets/pdf/PM.pdf).
