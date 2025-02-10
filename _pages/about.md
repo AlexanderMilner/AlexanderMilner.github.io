@@ -30,4 +30,6 @@ During my time at Durham I completed a research project funded by the London Mat
 
 My current research is focussing on computational and applied algebraic geometry, in particular, toric geometry and matroidal structures. I am currently writing a [Macaulay2](https://macaulay2.com/) package with [Ollie Clarke](https://sites.google.com/view/oclarke-homepage/) to compute every minimal Markov basis associated with a given configuration matrix.
 
-I spend most of my spare time either playing in orchestras or conducting them and I currently hold the position of conductor of the Edinburgh University Sinfonia.
+I spend most of my spare time either playing in orchestras or conducting them and I currently hold the position of conductor of the Edinburgh University Sinfonia. Whilst at Durham, I conducted the Durham University Symphony Orchestra from September 2021 until June 2024 as well the Durham Choral Society, the Durham Opera Ensemble and the Durham Light Opera Group.
+
+My government name is Alex(ander) but my nickname is Monty and I am to be called either!
