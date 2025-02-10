@@ -23,13 +23,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "nav-conducting",
-          title: "Conducting",
-          description: "A short summary of what I get up to when I&#39;m not doing maths.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/conducting/";
-          },
         },{id: "post-a-post-with-image-galleries",
       
         title: "a post with image galleries",
