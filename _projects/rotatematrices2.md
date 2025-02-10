@@ -21,28 +21,17 @@ A slightly random but fun question we can ask is: given a matrix, when can we ro
 
 For example, the matrix
 \begin{equation}
-\pi = \begin{pmatrix} 
-3 & -1 & -4 \\ 
-1 & 5 & -9 \\ 
-2 & -6 & 5 \end{pmatrix}
+\pi = \begin{pmatrix}  3 & -1 & -4 \\ 1 & 5 & -9 \\ 2 & -6 & 5 \end{pmatrix}
 \end{equation}
 is not currently invertible since $$\det(\pi)=0$$. However, if we rotate the $$3$$rd row to the left by one step, we get the matrix  
 \begin{equation}
-\begin{pmatrix}
-3 & -1 & -4 \\
-1 & 5 & -9 \\
--6 & 5 & 2
-\end{pmatrix}
+\begin{pmatrix} 3 & -1 & -4 \\ 1 & 5 & -9 \\ -6 & 5 & 2 \end{pmatrix}
 \end{equation}
 which has determinant $$-27$$ and thus is invertible. So $$\pi$$ can indeed be unlocked.
     
 Now let's look at another example. Take 
 \begin{equation}
-\gamma = \begin{pmatrix} 
-2 & -7 & 5 \\ 
--3 & -8 & 11 \\
-2 & 0 & -2
-\end{pmatrix}
+\gamma = \begin{pmatrix} 2 & -7 & 5 \\  -3 & -8 & 11 \\ 2 & 0 & -2 \end{pmatrix}
 \end{equation}
     
 Now, however hard you try, you will never be able to rotate the rows of $$\gamma$$ such that its determinant is non-zero and thus $$\gamma$$ can never be unlocked. A clever way to see why this happens is to notice that the digits in each row of $$\gamma$$ add up to $$0$$. Thus, $$(1,1,1)$$ is an eigenvector of $$\gamma$$  with eigenvalue $$0$$ no matter how we rotate the rows. Since the determinant of a matrix is equal to the product of its eigenvalues then the determinant of $$\gamma$$ is always zero. 
