@@ -36,16 +36,14 @@ Now let's look at another example. Take $$\gamma =
 
 Now, however hard you try, you will never be able to rotate the rows of $$\gamma$$ such that its determinant is non-zero and thus $$\gamma$$ can never be unlocked. A clever way to see why this happens is to notice that the digits in each row of $$\gamma$$ add up to 0. Thus, $$(1,1,1)$$ is an eigenvector of $$\gamma$$  with eigenvalue 0 no matter how we rotate the rows. Since the determinant of a matrix is equal to the product of its eigenvalues then the determinant of $$\gamma$$ is always zero. 
     
-Using the same logic, we can see that any matrix where all its rows add up to 0 can never be unlocked. We might conjecture that if the rows of a matrix do not all add up to 0, then it can be unlocked. However, if we take
-$$\begin{pmatrix}
+Using the same logic, we can see that any matrix where all its rows add up to 0 can never be unlocked. We might conjecture that if the rows of a matrix do not all add up to 0, then it can be unlocked. However, an easy counterexample is the matrix containing all 1s. A more interesting example of a matrix that can never be unlocked is
+$$\rho = \begin{pmatrix}
 1 & 0 & 1 & 0 \\
-1 & 0 & 1 & 0 \\
-1 & 0 & 1 & 0 \\
-1 & 0 & 1 & 0 
+0 & 1 & 0 & 1 \\
+1 & 1 & 1 & 1 \\
+a & b & c & d 
 \end{pmatrix}$$
-we see that two of the rows will always be the same no matter how we rotate them so the determinant will always be zero since the rows are not linearly independent. 
+where $$a$$,$$b$$,$$c$$ and $$d$$ can be any numbers. We can notice that the first 3 rows of $$\rho$$ will never be linearly independent no matter how we rotate them and thus the determinant will always be zero.
 
-Can we even give an exact condition on when a matrix can be unlocked?
-
-It turns out that the answer is yes - we just need the help of a little bit of graph theory.
+Having seen these different examples, it might not even seem like there would be an exact condition on when a matrix can be unlocked? Surprisingly, there is - we just need the help of a little bit of algebraic geometry and graph theory (although for the proofs and the nitty gritty details see [this write-up](/assets/pdf/Unlocking_Matrices.pdf)).
 
