@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Computing every minimal Markov basis
-description: A Macaulay2 package to compute every minimal Markov basis associated with a configuration matrix
+title: Computing minimal Markov bases
+description: A Macaulay2 package to compute all minimal Markov bases
 img: assets/img/bigfiber.png
 importance: 3
 category: Projects
