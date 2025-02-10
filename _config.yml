@@ -1,3 +1,9 @@
+#TO DO:
+# - Create more projects
+# - Create music page
+#
+
+
 # -----------------------------------------------------------------------------
 # Site settings
 # -----------------------------------------------------------------------------
@@ -193,6 +199,7 @@ exclude:
   - _pages/publications.md
   - _pages/repositories.md
   - _pages/dropdown.md
+  - _pages/conducting.md
 keep_files:
   - CNAME
   - .nojekyll
