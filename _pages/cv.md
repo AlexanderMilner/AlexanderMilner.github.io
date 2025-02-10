@@ -5,7 +5,7 @@ title: CV
 nav: true
 nav_order: 5
 cv_pdf: CV.pdf # you can also use external links here
-description: Click on the pdf symbol for a pdf version.
+description: Click the pdf symbol on the right for a pdf version.
 toc:
   sidebar: left
 ---
