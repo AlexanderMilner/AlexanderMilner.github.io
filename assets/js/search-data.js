@@ -431,6 +431,11 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-rotating-matrices",
+          title: 'Rotating matrices',
+          description: "Does an invertible matrix stay invertible if you rotate its rows?",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/rotatematrices/";
             },},{
         id: 'social-email',
         title: 'email',
