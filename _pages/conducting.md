@@ -1,8 +1,8 @@
 ---
 layout: page
-permalink: /music/
-title: Music
-description: A short summary of what I've been up to when I'm not doing maths.
+permalink: /conducting/
+title: Conducting
+description: A short summary of what I get up to when I'm not doing maths.
 nav: true
 nav_order: 6
 ---
