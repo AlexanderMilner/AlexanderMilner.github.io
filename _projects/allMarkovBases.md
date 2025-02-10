@@ -75,14 +75,18 @@ o6 = {Graph{{0, 1, 0} => {}}, Graph{{0, 0, 1} => {}         }}
 
 o6 : List
 ```
-\begin{figure}%
-    \centering
-    \caption{Fibers of $$A$$ corresponding to:}%
-    \subfloat[\centering $$A$$-degree 2]{{\includegraphics[width=7cm]{fiber2.png} }}%
-    \qquad
-    \subfloat[\centering $$A$$-degree 3]{{\includegraphics[width=7cm]{fiber3.png} }}%
-    \label{fig:fibers}%
-\end{figure}
+
+<div class="row">
+    <div class="col-sm mt-2 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/fiber2.jpg" title="2-fiber" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-2 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/fiber3.jpg" title="3-fiber" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Fibers of $$A$$ corresponding to $$A$$-degrees 2 and 3.
+</div>
 
 The fundamental theorem of Markov bases, see Theorem 3.1 in {% cite DS_1998 %}, states that Markov bases are in 1-to-1 correspondence with sets of elements which connect any fiber corresponding to an $$A$$-degree. Thus, looking at the graph (a) from Figure \ref{fig:fibers}, it is clear that $$x^2-y$$ is an indispensable element ie. every Markov basis contains it. To connect graph (b) from Figure \ref{fig:fibers}, our Markov basis must contain either $$xy-z$$ or $$x^3-z$$ in addition to $$x^2-y$$ and from what we calculated about $$I_A$$, these form the only two minimal Markov bases of $$A$$.
 
