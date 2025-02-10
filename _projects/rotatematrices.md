@@ -15,7 +15,7 @@ header-includes:
   - \DeclareMathOperator{\det}{det}
 ---
 
-This project is designed to give an introduction to [this write-up](/pdf/Unlocking_Matrices.pdf), which is based on the final chapter of my [masters dissertation](/pdf/PM.pdf).
+This project is designed to give an introduction to [this write-up](pdf/Unlocking_Matrices.pdf), which is based on the final chapter of my [masters dissertation](pdf/PM.pdf).
 
 A slightly random but fun question we can ask is: given a matrix, when can we rotate its rows to make it invertible? We will say that a matrix can be unlocked if there is a way we can rotate its rows so that it becomes invertible.
 
