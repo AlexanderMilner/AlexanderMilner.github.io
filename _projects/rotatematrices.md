@@ -17,7 +17,11 @@ header-includes:
 
 This project is designed to give an introduction to [this write-up](/assets/pdf/Unlocking_Matrices.pdf), which is based on the final chapter of my [masters dissertation](/assets/pdf/PM.pdf).
 
+# Unlocking matrices by row rotations
+
 A slightly random but fun question we can ask is: given a matrix, when can we rotate its rows to make it invertible? We will say that a matrix can be unlocked if there is a way we can rotate its rows so that it becomes invertible.
+
+## Examples
 
 For example, the matrix  $$ \pi = \begin{pmatrix} 3 & -1 & -4 \\ 1 & 5 & -9 \\ 2 & -6 & 5 \end{pmatrix}$$ is not currently invertible since $$\det(\pi)$$=0. However, if we rotate the 3rd row to the left by one step, we get the matrix  
 $$\begin{pmatrix}
@@ -46,6 +50,10 @@ a & b & c & d
 where $$a$$,$$b$$,$$c$$ and $$d$$ can be any numbers. We can notice that the first 3 rows of $$\rho$$ will never be linearly independent no matter how we rotate them and thus the determinant will always be zero.
 
 Having seen these different examples, it might not even seem like there would be an exact condition on when a matrix can be unlocked? Surprisingly, there is - we just need the help of a little bit of algebraic geometry and graph theory (although for the proofs and the nitty gritty details see [this write-up](/assets/pdf/Unlocking_Matrices.pdf)). The original construction comes from {% cite KS_2004 %} which has been built-upon in {% cite BKS_2014 %}.
+
+## Some algebraic geometry and graph theory
+
+
 
 
 
