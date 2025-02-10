@@ -19,7 +19,7 @@ This project is designed to give an introduction to [this write-up](assets/pdf/U
 
 A slightly random but fun question we can ask is: given a matrix, when can we rotate its rows to make it invertible? We will say that a matrix can be unlocked if there is a way we can rotate its rows so that it becomes invertible.
 
-For example, the matrix $\pi = \begin{pmatrix} 3 & -1 & -4 \\ 1 & 5 & -9 \\ 2 & -6 & 5 \end{pmatrix}$ is not currently invertible since $\det(\pi)=0$. However, if we let the $r_i$ operator rotate the $i$th row to the left by one step, we see that $r_3(\pi)=
+For example, the matrix $ \pi = \begin{pmatrix} 3 & -1 & -4 \\ 1 & 5 & -9 \\ 2 & -6 & 5 \end{pmatrix}$ is not currently invertible since $\det(\pi)=0$. However, if we let the $r_i$ operator rotate the $i$th row to the left by one step, we see that $r_3(\pi)=
     \begin{pmatrix}
         3 & -1 & -4 \\
         1 & 5 & -9 \\
