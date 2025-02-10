@@ -50,7 +50,7 @@ o3 = image | 2  3  |
                                3
 o3 : ZZ-module, submodule of ZZ
 ```
-Therefore, if we let $$x,y,z$$ be variables, we know $$x^2 -y, x^3 - z \in I_A$$. We might suspect that $$I_A := \langle x^u-x^v: u,v \in \NN^3, u-v \in \operatorname{ker}_\ZZ(A)\rangle = \langle x^2 - y, x^3 - z \rangle$$ and while the generators of the integer kernel lattice won't in general be a Markov basis (see $$A=(3 \quad 4 \quad 5)$$), we can use the method *toricMarkov* from the *FourTiTwo* package to confirm that $$\{\{2,-1,0\},\{3,0,-1\}\}$$ is a Markov basis for $$A$$. Markov bases are outputted as matrices both in the *FourTiTwo* package and in our package.
+Therefore, if we let $$x,y,z$$ be variables, we know $$x^2 -y, x^3 - z \in I_A$$. We might suspect that $$I_A := \langle x^u-x^v: u,v \in \NN^3, u-v \in \ker_\ZZ(A)\rangle = \langle x^2 - y, x^3 - z \rangle$$ and while the generators of the integer kernel lattice won't in general be a Markov basis (see $$A=(3 \quad 4 \quad 5)$$), we can use the method *toricMarkov* from the *FourTiTwo* package to confirm that $$\{\{2,-1,0\},\{3,0,-1\}\}$$ is a Markov basis for $$A$$. Markov bases are outputted as matrices both in the *FourTiTwo* package and in our package.
 
 ```
 i4 : toricMarkov A
