@@ -17,24 +17,28 @@ header-includes:
 
 This project is based on [this write-up](assets/pdf/Unlocking_Matrices.pdf) of the final chapter of my [masters dissertation](assets/pdf/PM.pdf).
 
-Our first question is: given a matrix, under what conditions can we rotate its rows to make it invertible?
+A slightly random but fun question we can ask is: given a matrix, when can we rotate its rows to make it invertible?
 
-The matrix $\pi=
+For example, the matrix $\pi=
     \begin{pmatrix}
         3 & -1 & -4 \\
         1 & 5 & -9 \\
         2 & -6 & 5
-    \end{pmatrix} \in M_3(\mathbb{Q})$ can be unlocked by row rotations as even though $\det(\pi)=0$, $r_3(\pi)=\pi[e_3]=
+    \end{pmatrix}$ is not currently invertible since $\det(\pi)=0$. However, if we let the $r_i$ operator rotate the $i$th row to the left by one step, we see that $r_3(\pi)=
     \begin{pmatrix}
         3 & -1 & -4 \\
         1 & 5 & -9 \\
         -6 & 5 & 2
-    \end{pmatrix}$ has determinant $-27$. $\gamma =
+    \end{pmatrix}$, which has determinant $-27$ and thus is invertible.
+    
+    Now let's look at another example. Take $\gamma =
     \begin{pmatrix}
         2 & -7 & 5 \\
         -3 & -8 & 11 \\
         2 & 0 & -2
-    \end{pmatrix} \in M_3(\mathbb{Q})$, however, can not be unlocked by row rotations ie. $det(\sigma(\gamma)) = 0$ for all $\sigma \in \langle R \rangle$. This is simply due to the fact that the digits in each row of $\gamma$ add up to $0$. An easy way to see that this is the case is that $(1,1,1)$ is an eigenvector of $\sigma(\gamma)$  with eigenvalue $0$ for all $\sigma \in \langle R \rangle$. Since the determinant of a matrix is equal to the product of its eigenvalues then $\det(\sigma(\gamma)) = 0$ for all $\sigma \in \langle R \rangle$. But, as we will see, the rows of a matrix all adding up to $0$ is not a necessary condition for a matrix not to be able to be unlocked by row rotations.
+    \end{pmatrix}$. Now, however hard you try, you will never be able to rotate the rows of $\gamma$ such that its determinant is non-zero. A clever way to see why this happens is to notice that the digits in each row of $\gamma$ add up to $0$. Thus, $(1,1,1)$ is an eigenvector of $\sigma(\gamma)$  with eigenvalue $0$ no matter how we rotate the rows. Since the determinant of a matrix is equal to the product of its eigenvalues then the determinant of $\gamma$ is always zero. 
+    
+It might seem likeBut, as we will see, the rows of a matrix all adding up to $0$ is not a necessary condition for a matrix not to be able to be unlocked by row rotations.
 
 Okay its time to do some maths:
 
