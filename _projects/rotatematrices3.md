@@ -4,7 +4,7 @@ title: Rotating matrices 5
 description: Does an invertible matrix stay invertible if you rotate its rows?
 img: assets/img/bipartite4.png
 importance: 10
-category: Projects
+category: Coding
 related_publications: true
 ---
 
