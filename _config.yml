@@ -199,8 +199,7 @@ exclude:
   - _pages/repositories.md
   - _pages/dropdown.md
   - _pages/conducting.md
-  - _projects/allMarkovBases.md
-  - _projects/allMarkovBases2.md
+  - _projects
 keep_files:
   - CNAME
   - .nojekyll
