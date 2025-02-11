@@ -200,6 +200,7 @@ exclude:
   - _pages/dropdown.md
   - _pages/conducting.md
   - _projects/allMarkovBases.md
+  - _projects/allMarkovBases2.md
 keep_files:
   - CNAME
   - .nojekyll
