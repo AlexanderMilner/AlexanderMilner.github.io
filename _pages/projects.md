@@ -2,7 +2,7 @@
 layout: page
 title: Research
 permalink: /research/
-description: These projects are still very much under construction!!
+description: These projects are still very much under construction - should be up and running shortly!
 nav: true
 nav_order: 3
 display_categories: [Projects, Recreational, Coding]
