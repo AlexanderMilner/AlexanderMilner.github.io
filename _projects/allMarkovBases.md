@@ -14,6 +14,7 @@ header-includes:
   - \usepackage{amsmath}
   - \DeclareMathOperator{\det}{det}
   - \DeclareMathOperator{\ker}{ker}
+  - \DeclareMathOperator{\degA}{\operatorname{deg}_A}
 ---
 
 <div class="row">
@@ -22,7 +23,7 @@ header-includes:
     </div>
 </div>
 <div class="caption">
-    Figure 1: A huge fiber corresponding to the configuration matrix $$A = (1,2,3,12)$$
+    Figure 1: A huge fiber corresponding to the configuration matrix $$A = (1 2 3 12)$$
 </div>
 
 Given a starting configuration matrix $$A$$, we can define a toric ideal $$I_A$$ as the binomials corresponding to elements in the integer kernel of $$A$$. Then a Markov basis for $$A$$ is a set of generators of $$I_A$$ and the Markov basis is minimal if no proper subset of the generators generate $$I_A$$. The seminal paper {% cite DS_1998 %} by Diaconis and Sturmfels provided a correspondence between the theory of Markov bases and algebraic statistics and this area of study has flourished in recent year. For an introduction to the association of Markov bases to statistics, see {% cite Kos_2020 %}, or, for a more comprehensive overview, see {% cite ALP_2024 %}.
@@ -50,7 +51,7 @@ o3 = image | 2  3  |
                                3
 o3 : ZZ-module, submodule of ZZ
 ```
-Therefore, if we let $$x,y,z$$ be variables, we know $$x^2 -y, x^3 - z \in I_A$$. We might suspect that $$I_A := \langle x^u-x^v: u,v \in \mathbb{N}^3, u-v \in \ker_\mathbb{Z}(A)\rangle = \langle x^2 - y, x^3 - z \rangle$$ and while the generators of the integer kernel lattice won't in general be a Markov basis (see $$A=(3 \quad 4 \quad 5)$$), we can use the method *toricMarkov* from the *FourTiTwo* package to confirm that $$\{\{2,-1,0\},\{3,0,-1\}\}$$ is a Markov basis for $$A$$. Markov bases are outputted as matrices both in the *FourTiTwo* package and in our package.
+Therefore, if we let $$x,y,z$$ be variables, we know $$x^2 -y, x^3 - z \in I_A$$. We might suspect that $$I_A := \langle x^u-x^v: u,v \in \mathbb{N}^3, u-v \in \ker_\mathbb{Z}(A)\rangle = \langle x^2 - y, x^3 - z \rangle$$ and while the generators of the integer kernel lattice won't in general be a Markov basis (see $$A=(3 4 5)$$), we can use the method *toricMarkov* from the *FourTiTwo* package to confirm that $$\{\{2,-1,0\},\{3,0,-1\}\}$$ is a Markov basis for $$A$$. Markov bases are outputted as matrices both in the *FourTiTwo* package and in our package.
 
 ```
 i4 : toricMarkov A
