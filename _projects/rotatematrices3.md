@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Rotating matrices 3
+title: Rotating matrices 5
 description: Does an invertible matrix stay invertible if you rotate its rows?
 img: assets/img/bipartite4.png
 importance: 10
