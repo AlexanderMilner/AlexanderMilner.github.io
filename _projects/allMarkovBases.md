@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Computing minimal Markov bases 2
+title: Computing minimal Markov bases
 description: A Macaulay2 package to compute all minimal Markov bases
 img: assets/img/bigfiber.png
 importance: 3
