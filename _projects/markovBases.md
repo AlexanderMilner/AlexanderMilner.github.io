@@ -39,4 +39,28 @@ We now present an example. Suppose our configuration matrix is the monomial curv
                                    3
     o3 : ZZ-module, submodule of ZZ
 
-Therefore,
+Therefore, if we let $$x,y,z$$ be variables, we know $$x^2 -y, x^3 - z \in I_A$$. We might suspect that $$I_A := \langle x^u-x^v: u,v \in \mathbb{N}^3, u-v \in \ker_\mathbb{Z}(A)\rangle = \langle x^2 - y, x^3 - z \rangle$$ and while the generators of the integer kernel lattice won't in general be a Markov basis (see $$A=(3 4 5)$$), we can use the method *toricMarkov* from the *FourTiTwo* package to confirm that $${{2,-1,0},{3,0,-1}}$$ is a Markov basis for $$A$$. Markov bases are outputted as matrices both in the *FourTiTwo* package and in our package.
+
+
+    i4 : toricMarkov A
+    
+    o4 = | 2 -1 0  |
+         | 3 0  -1 |
+    
+                  2       3
+    o4 : Matrix ZZ  <-- ZZ
+
+We can notice that $$xy-z \in I_A$$ and $$x^3-z \in \langle x^2-y,xy-z \rangle$$ so $$I_A = \langle x^2-y,xy-z \rangle$$ and thus $$\{\{2,-1,0\},\{1,1,-1\}\}$$ is another Markov basis for $$A$$. If we run the *markovBases* method from our package, we can confirm that these are in fact the only two minimal Markov bases for $$A$$.
+
+
+    i5 : markovBases A
+    
+    o5 = {| 2 -1 0  |, | 2 -1 0  |}
+          | 3 0  -1 |  | 1 1  -1 |
+    
+    o5 : List
+
+One observation about the minimal Markov bases we have found is that the set of $$A$$-degrees is the same for both since $$\deg_A (x^2-y)=2$$, $$\deg_A(x^3-z)=3$$ and $$\deg_A (x^2-y)=2$$, $$\deg_A(xy-z)=3$$. Indeed, in general the $$A$$-degrees of a minimal Markov basis are independent of the choice of the minimal Markov basis, see {% cite MS_2004 %}. %Thus, we can look at the fibers corresponding to the $$A$$-degrees of any set of minimal generators of $$I_A$$. 
+
+Thus, the *fiberGraph* method in our package starts by computing the $$A$$-degrees of the one minimal Markov basis computed by *toricMarkov*. Using a breadth-first-search algorithm, it constructs the fibers corresponding to $$A$$-degrees as graphs where two elements $$u,v \in \mathbb{N}^n$$ of a fiber share an edge if they have non-trivial intersection ie. $$u_i > 0$$ and $$v_i > 0$$ for some $$i$$.
+
