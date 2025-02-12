@@ -85,7 +85,7 @@ Thus, the *fiberGraph* method in our package starts by computing the $$A$$-degre
     </div>
 </div>
 <div class="caption">
-    Figure 2: Fibers of $A$ corresponding to $A$-degrees 2 and 3.
+    Figure 2: Fibers of $$A$$ corresponding to $$A$$-degrees 2 and 3.
 </div>
 
 The fundamental theorem of Markov bases, see Theorem 3.1 in {% cite DS_1998 %}, states that Markov bases are in 1-to-1 correspondence with sets of elements which connect any fiber corresponding to an $$A$$-degree. Thus, looking at the left graph from Figure 2, it is clear that $$x^2-y$$ is an indispensable element ie. every Markov basis contains it. To connect the right graph from Figure 2, our Markov basis must contain either $$xy-z$$ or $$x^3-z$$ in addition to $$x^2-y$$ and from what we calculated about $$I_A$$, these form the only two minimal Markov bases of $$A$$.
