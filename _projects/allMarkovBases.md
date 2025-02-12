@@ -97,7 +97,7 @@ Applying the algorithm to our example, the connected components of our fibers ca
 
     i7 : fiberGraph(A, ReturnConnectedComponents => true)
     
-    o7 = {{{{2, 0, 0}}, {{0, 1, 0}}}, {{{3, 0, 0}, {1, 1, 0}}, {{0, 0, 1}}}}
+    o7 = { { { {2, 0, 0} }, { {0, 1, 0} } }, { { {3, 0, 0}, {1, 1, 0} }, { {0, 0, 1} } } }
     
     o7 : List
 
