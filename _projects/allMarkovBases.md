@@ -64,9 +64,18 @@ We can notice that $$xy-z \in I_A$$ and $$x^3-z \in \langle x^2-y,xy-z \rangle$$
     
     o5 : List
 
-One observation about the minimal Markov bases we have found is that the set of $$A$$-degrees is the same for both since $$\deg_A (x^2-y)=2$$, $$\deg_A(x^3-z)=3$$ and $$\deg_A (x^2-y)=2$$, $$\deg_A(xy-z)=3$$. Indeed, in general the $$A$$-degrees of a minimal Markov basis are independent of the choice of the minimal Markov basis, see {% cite MS_2004 %}. Thus, we can look at the fibers corresponding to the $$A$$-degrees of any set of minimal generators of $$I_A$$. 
+One observation about the minimal Markov bases we have found is that the set of $$A$$-degrees is the same for both since $$\deg_A (x^2-y)=2$$, $$\deg_A(x^3-z)=3$$ and $$\deg_A (x^2-y)=2$$, $$\deg_A(xy-z)=3$$. Indeed, in general the $$A$$-degrees of a minimal Markov basis are independent of the choice of the minimal Markov basis, see {% cite MS\_2004 %}. Thus, we can look at the fibers corresponding to the $$A$$-degrees of any set of minimal generators of $$I_A$$. 
 
-Thus, the *fiberGraph* method in our package starts by computing the $$A$$-degrees of the one minimal Markov basis computed by *toricMarkov*. Using a breadth-first-search algorithm, it constructs the fibers corresponding to $$A$$-degrees as graphs where two elements $$u,v \in \mathbb{N} ^ n $$ of a fiber share an edge if they have non-trivial intersection ie. $$u_i > 0$$ and $$v_i > 0$$ for some i.
+Thus, the *fiberGraph* method in our package starts by computing the $$A$$-degrees of the one minimal Markov basis computed by *toricMarkov*. Using a breadth-first-search algorithm, it constructs the fibers corresponding to $$A$$-degrees as graphs where two elements $$u,v \in \mathbb{N}^n$$ of a fiber share an edge if they have non-trivial intersection ie. $$u_i > 0$$ and $$v_i > 0$$ for some $$i$$.
+
+    i6 : fiberGraph A
+    
+    o6 = {Graph{{0, 1, 0} => {}}, Graph{{0, 0, 1} => {}         }}
+                {2, 0, 0} => {}         {1, 1, 0} => {{3, 0, 0}}
+                                        {3, 0, 0} => {{1, 1, 0}}
+    
+    o6 : List
+
 
 <div class="row">
     <div class="col-sm mt-2 mt-md-0">
@@ -85,6 +94,12 @@ The fundamental theorem of Markov bases, see Theorem 3.1 in {% cite DS_1998 %}, 
 In general, we can use Theorem 2.6 from {% cite CKT_2007 %} to give us an algorithm to compute minimal Markov bases. For each fiber (which is represented as a graph with edges between elements which have nontrivial intersection) we treat the connected components as nodes of a new graph for which we choose a spanning tree. Then the union over all fibers of the binomials $$x^u-x^v$$ where $$u$$ and $$v$$ are in distinct connected components connected by an edge of the spanning tree form a minimal Markov basis. Then Theorem 2.7 from {% cite CKT_2007 %} tells us that every minimal Markov basis can be found using the algorithm above.
 
 Applying the algorithm to our example, the connected components of our fibers can be calculated by changing the option `ReturnConnectedComponents` of *fiberGraph* to `true`.
+
+    i7 : fiberGraph(A, ReturnConnectedComponents => true)
+    
+    o7 = {{{{2, 0, 0}}, {{0, 1, 0}}}, {{{3, 0, 0}, {1, 1, 0}}, {{0, 0, 1}}}}
+    
+    o7 : List
 
 Thus, there are two connected components in each fiber as can easily be seen from Figure 2 and so there is only one possible spanning tree for both fibers (just the one edge between the two connected components). For graph (a), we also have no choice over which element of the connected components we choose as each connected component contains only one element, therefore, we end up with the indispensable element $$x^2-y$$. For graph (b), the only choice we can make is which element $$u$$ of the connected component with two elements $$\{\{1,1,0\},\{3,0,0\}\}$$ we choose for the binomial $$x^u-x^v$$ where $$v=\{0,0,1\}$$. So, as expected, our algorithm produces two Markov bases, $$\{x^2-y,xy-z\}$$ and $$\{x^2-y,x^3-z\}$$.
 
