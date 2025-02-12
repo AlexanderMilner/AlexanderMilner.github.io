@@ -60,9 +60,7 @@ We can notice that $$xy-z \in I_A$$ and $$x^3-z \in \langle x^2-y,xy-z \rangle$$
     
     o5 : List
 
-One observation about the minimal Markov bases we have found is that the set of $$A$$-degrees is the same for both since $$\degA (x^2-y)=2$$, $$\degA(x^3-z)=3$$ and $$\degA (x^2-y)=2$$, $$\degA(xy-z)=3$$. Indeed, in general the $$A$$-degrees of a minimal Markov basis are independent of the choice of the minimal Markov basis, see {% cite MS_2004 %}. %Thus, we can look at the fibers corresponding to the $$A$$-degrees of any set of minimal generators of $$I_A$$. 
-
-Thus, the *fiberGraph* method in our package starts by computing the $$A$$-degrees of the one minimal Markov basis computed by *toricMarkov*. Using a breadth-first-search algorithm, it constructs the fibers corresponding to $$A$$-degrees as graphs where two elements $$u,v \in \mathbb{N}^n$$ of a fiber share an edge if they have non-trivial intersection ie. $$u_i>0$$ and $$v_i>0$$ for some $$i$$.
+One observation about the minimal Markov bases we have found is that the set of $$A$$-degrees is the same for both since $$\degA (x^2-y)=2$$, $$\degA(x^3-z)=3$$ and $$\degA (x^2-y)=2$$, $$\degA(xy-z)=3$$. Indeed, in general the $$A$$-degrees of a minimal Markov basis are independent of the choice of the minimal Markov basis,
 
 
 
