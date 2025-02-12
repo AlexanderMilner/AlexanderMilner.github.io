@@ -79,7 +79,7 @@ o14 = | 16 3  3  -1 -1 |
 
                5       5
 o14 : Matrix ZZ  &lt;-- ZZ
-</code></pre></div></div> <p>Thus, if we take $$B= \begin{pmatrix}</p> <p>1 &amp; 1 &amp; 2 &amp; 4 &amp; 21 \</p> <p>2 &amp; 4 &amp; 4 &amp; 15 &amp; 41</p> <p>\end{pmatrix}$$, then it is almost 10 times quicker to use <em>randomMarkov</em> than to compute all minimal Markov bases and choose one at random.</p> <p>In addition, if we wanted 3 minimal Markov bases of \(B\), we can use the <code class="language-plaintext highlighter-rouge">NumberOfBases</code> option.</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i15 : randomMarkov(B, NumberOfBases =&gt; 3)
+</code></pre></div></div> <p>Thus, if we take \(B= \begin{pmatrix} 1 &amp; 1 &amp; 2 &amp; 4 &amp; 21 \\ 2 &amp; 4 &amp; 4 &amp; 15 &amp; 41 \end{pmatrix}\), then it is almost 10 times quicker to use <em>randomMarkov</em> than to compute all minimal Markov bases and choose one at random.</p> <p>In addition, if we wanted 3 minimal Markov bases of \(B\), we can use the <code class="language-plaintext highlighter-rouge">NumberOfBases</code> option.</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i15 : randomMarkov(B, NumberOfBases =&gt; 3)
 
 o17 = {| 18 3  2  -1 -1 |, | 22 3  0  -1 -1 |, | 6  3  8  -1 -1 |}
        | 13 -4 4  1  -1 |  | 15 -4 3  1  -1 |  | 1  -4 10 1  -1 |
