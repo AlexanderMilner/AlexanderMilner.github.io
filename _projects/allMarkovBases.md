@@ -93,13 +93,17 @@ In general, we can use Theorem 2.6 from {% cite CKT_2007 %} to give us an algori
 
 Applying the algorithm to our example, the connected components of our fibers can be calculated by changing the option `ReturnConnectedComponents` of *fiberGraph* to `true`.
 
+
+
     i7 : fiberGraph(A, ReturnConnectedComponents => true)
     
-    o7 = `{`{`{`{2, 0, 0`}`}, `{`{0, 1, 0`}`}`}, `{`{`{3, 0, 0`}, `{1, 1, 0`}`}, `{`{0, 0, 1`}`}`}`}
+    o7 = {{{{2, 0, 0}}, {{0, 1, 0}}}, {{{3, 0, 0}, {1, 1, 0}}, {{0, 0, 1}}}}
     
     o7 : List
 
-Thus, there are two connected components in each fiber as can easily be seen from Figure 2 and so there is only one possible spanning tree for both fibers (just the one edge between the two connected components). For graph (a), we also have no choice over which element of the connected components we choose as each connected component contains only one element, therefore, we end up with the indispensable element $$x^2-y$$. For graph (b), the only choice we can make is which element $$u$$ of the connected component with two elements $$\{\{1,1,0\},\{3,0,0\}\}$$ we choose for the binomial $$x^u-x^v$$ where $$v=\{0,0,1\}$$. So, as expected, our algorithm produces two Markov bases, $$\{x^2-y,xy-z\}$$ and $$\{x^2-y,x^3-z\}$$.
+    
+
+Thus, there are two connected components in each fiber as can easily be seen from Figure 2 and so there is only one possible spanning tree for both fibers (just the one edge between the two connected components). For the left graph, we also have no choice over which element of the connected components we choose as each connected component contains only one element, therefore, we end up with the indispensable element $$x^2-y$$. For the right graph, the only choice we can make is which element $$u$$ of the connected component with two elements $$\{\{1,1,0\},\{3,0,0\}\}$$ we choose for the binomial $$x^u-x^v$$ where $$v=\{0,0,1\}$$. So, as expected, our algorithm produces two Markov bases, $$\{x^2-y,xy-z\}$$ and $$\{x^2-y,x^3-z\}$$.
 
 The final non-obvious aspect of the algorithm is how to generate all the spanning trees on $$n$$ nodes. For this, we use a result from Prüfer's paper, {% cite Pru_1918 %}, which states that there is a bijection between all spanning trees on $$n$$ nodes and all sequences of elements $$\{1,...,n\}$$ of length $$n-2$$, known as Prüfer sequences. The paper also provides an algorithm to compute a spanning tree from a given Prüfer sequence. 
 
