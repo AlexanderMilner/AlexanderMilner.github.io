@@ -23,9 +23,6 @@ Macaulay2 already contains a package, *FourTiTwo*, which can compute a minimal M
 
 We now present an example. Suppose our configuration matrix is the monomial curve $$A=(1 2 3)$$. The first thing we might want to do is to compute the integer kernel of $$A$$.
 
-    Macaulay2, version 1.24.11
-    with packages: ConwayPolynomials, Elimination, IntegralClosure, InverseSystems, Isomorphism, LLLBases, MinimalPrimes, OnlineLookup, PackageCitations, Polyhedra, PrimaryDecomposition, ReesAlgebra, Saturation, TangentCone, Truncations, Varieties
-    
     i1 : installPackage "allMarkovBases";
     
     i2 : A = matrix "1,2,3";
