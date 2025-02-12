@@ -63,7 +63,7 @@ We can notice that $$xy-z \in I_A$$ and $$x^3-z \in \langle x^2-y,xy-z \rangle$$
     
     o5 : List
 
-One observation about the minimal Markov bases we have found is that the set of $$A$$-degrees is the same for both since $$\degA (x^2-y)=2$$, $$\degA(x^3-z)=3$$ and $$\degA (x^2-y)=2$$, $$\degA(xy-z)=3$$. Indeed, in general the $$A$$-degrees of a minimal Markov basis are independent of the choice of the minimal Markov basis, see {% cite MS2004 %}. %Thus, we can look at the fibers corresponding to the $$A$$-degrees of any set of minimal generators of $$I_A$$. 
+One observation about the minimal Markov bases we have found is that the set of $$A$$-degrees is the same for both since $$\degA (x^2-y)=2$$, $$\degA(x^3-z)=3$$ and $$\degA (x^2-y)=2$$, $$\degA(xy-z)=3$$. Indeed, in general the $$A$$-degrees of a minimal Markov basis are independent of the choice of the minimal Markov basis, see {% cite whyhappen %} . %Thus, we can look at the fibers corresponding to the $$A$$-degrees of any set of minimal generators of $$I_A$$. 
 
 Thus, the *fiberGraph* method in our package starts by computing the $$A$$-degrees of the one minimal Markov basis computed by *toricMarkov*. Using a breadth-first-search algorithm, it constructs the fibers corresponding to $$A$$-degrees as graphs where two elements $$u,v \in \mathbb{N}^n$$ of a fiber share an edge if they have non-trivial intersection ie. $$u_i>0$$ and $$v_i>0$$ for some $$i$$.
 
@@ -102,7 +102,7 @@ Applying the algorithm to our example, the connected components of our fibers ca
 
 Thus, there are two connected components in each fiber as can easily be seen from Figure 2 and so there is only one possible spanning tree for both fibers (just the one edge between the two connected components). For graph (a), we also have no choice over which element of the connected components we choose as each connected component contains only one element, therefore, we end up with the indispensable element $$x^2-y$$. For graph (b), the only choice we can make is which element $$u$$ of the connected component with two elements $$\{\{1,1,0\},\{3,0,0\}\}$$ we choose for the binomial $$x^u-x^v$$ where $$v=\{0,0,1\}$$. So, as expected, our algorithm produces two Markov bases, $$\{x^2-y,xy-z\}$$ and $$\{x^2-y,x^3-z\}$$.
 
-The final non-obvious aspect of the algorithm is how to generate all the spanning trees on $$n$$ nodes. For this, we use a result from Prüfer's paper, {% cite Pru1918 %}, which states that there is a bijection between all spanning trees on $$n$$ nodes and all sequences of elements $$\{1,...,n\}$$ of length $$n-2$$, known as Prüfer sequences. The paper also provides an algorithm to compute a spanning tree from a given Prüfer sequence. 
+The final non-obvious aspect of the algorithm is how to generate all the spanning trees on $$n$$ nodes. For this, we use a result from Prüfer's paper, {% cite Pru_1918 %}, which states that there is a bijection between all spanning trees on $$n$$ nodes and all sequences of elements $$\{1,...,n\}$$ of length $$n-2$$, known as Prüfer sequences. The paper also provides an algorithm to compute a spanning tree from a given Prüfer sequence. 
 
 Our package contains the *pruferSequence* method which takes in a Prüfer sequence and outputs the edge set of the corresponding spanning tree using the algorithm from Prüfer's paper. For our example, for either fiber there are two connected components, so to calculate the spanning trees, we input the only Prüfer sequence for $$n=2$$: the empty sequence. 
 
