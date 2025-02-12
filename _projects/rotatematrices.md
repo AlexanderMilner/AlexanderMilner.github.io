@@ -6,13 +6,6 @@ img: assets/img/bipartite4.png
 importance: 4
 category: Projects
 related_publications: true
-output: 
-  bookdown::pdf_book:
-    latex_engine: lualatex
-    
-header-includes:
-  - \usepackage{amsmath}
-  - \DeclareMathOperator{\det}{det}
 ---
 
 
