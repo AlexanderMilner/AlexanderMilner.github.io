@@ -14,7 +14,7 @@ related_publications: true
     </div>
 </div>
 <div class="caption">
-    Figure 1: A huge fiber corresponding to the configuration matrix $$A = (1 2 3 12)$$
+    Figure 1: A huge fiber corresponding to the configuration matrix $$A = (1, 2, 3, 12)$$
 </div>
 
 Given a starting configuration matrix $$A$$, we can define a toric ideal $$I_A$$ as the binomials corresponding to elements in the integer kernel of $$A$$. Then a Markov basis for $$A$$ is a set of generators of $$I_A$$ and the Markov basis is minimal if no proper subset of the generators generate $$I_A$$. The seminal paper {% cite DS_1998 %} by Diaconis and Sturmfels provided a correspondence between the theory of Markov bases and algebraic statistics and this area of study has flourished in recent year. For an introduction to the association of Markov bases to statistics, see {% cite Kos_2020 %}, or, for a more comprehensive overview, see {% cite ALP_2024 %}.
