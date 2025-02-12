@@ -202,7 +202,6 @@ exclude:
   - _pages/publications.md
   - _projects/allMarkovBases.md
   - _projects/allMarkovBases2.md
-  - _projects/rotatematrices.md
   - _projects/rotatematrices3.md
 keep_files:
   - CNAME
