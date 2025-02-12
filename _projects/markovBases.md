@@ -17,7 +17,7 @@ related_publications: true
     Figure 1: A huge fiber corresponding to the configuration matrix $$A = (1, 2, 3, 12)$$
 </div>
 
-Can we {% cite MS_2004 %}?
+Can we {% cite MS\_2004 %}?
 
 
 
