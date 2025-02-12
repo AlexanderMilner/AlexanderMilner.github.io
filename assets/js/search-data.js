@@ -436,6 +436,11 @@ ninja.data = [{
           description: "A Macaulay2 package to compute all minimal Markov bases",
           section: "Projects",handler: () => {
               window.location.href = "/projects/allMarkovBases/";
+            },},{id: "projects-invariants-of-elliptic-curves",
+          title: 'Invariants of elliptic curves',
+          description: "On the smallest invariant factor of elliptic curves",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/ellipticinvariants/";
             },},{id: "projects-rotating-matrices",
           title: 'Rotating matrices',
           description: "Does an invertible matrix stay invertible if you rotate its rows?",
