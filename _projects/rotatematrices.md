@@ -27,12 +27,7 @@ A slightly random but fun question we can ask is: given a matrix, when can we ro
 
 ### Examples
 
-For example, the matrix  $$ \pi = \begin{pmatrix} 3 & -1 & -4 \\ 1 & 5 & -9 \\ 2 & -6 & 5 \end{pmatrix}$$ is not currently invertible since $$\det(\pi)$$=0. However, if we now rotate the 3rd row to the left by one column, then we get another matrix,  
-$$\begin{pmatrix}
-        3 & -1 & -4 \\
-        1 & 5 & -9 \\
-        -6 & 5 & 2
-    \end{pmatrix}$$, which has determinant -27 and thus is invertible. So $$\pi$$ can indeed be unlocked.
+For example, the matrix  $$ \pi = \begin{pmatrix} 3 & -1 & -4 \\ 1 & 5 & -9 \\ 2 & -6 & 5 \end{pmatrix}$$ is not currently invertible since $$\det(\pi)$$=0. However, $$\begin{pmatrix} 3 & -1 & -4 \\ 1 & 5 & -9 \\ -6 & 5 & 2 \end{pmatrix}$$, the matrix we get if we rotate the 3rd row to the left by one column, has determinant -27 and thus is invertible. So $$\pi$$ can indeed be unlocked.
     
 Now let's look at another example. Take $$\gamma =
     \begin{pmatrix} 
