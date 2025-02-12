@@ -431,8 +431,8 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
-            },},{id: "projects-computing-minimal-markov-bases-2",
-          title: 'Computing minimal Markov bases 2',
+            },},{id: "projects-computing-minimal-markov-bases",
+          title: 'Computing minimal Markov bases',
           description: "A Macaulay2 package to compute all minimal Markov bases",
           section: "Projects",handler: () => {
               window.location.href = "/projects/allMarkovBases/";
