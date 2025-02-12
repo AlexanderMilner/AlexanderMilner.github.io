@@ -8,6 +8,8 @@ category: Projects
 related_publications: true
 ---
 
+This project is joint with [Ollie Clarke](https://sites.google.com/view/oclarke-homepage/) where we wrote the *allMarkovBases* package for [Macaulay2](https://macaulay2.com/), which allows for the computation of all minimal Markov bases of a given integer matrix. The package builds on functionality of *FourTiTwo* by producing the fiber graph of the matrix. This graph allows us to compute the indispensable set of binomials as well as the universal Markov basis.
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="/assets/img/bigfiber.png" title="Huge fiber" class="img-fluid rounded z-depth-1" %}
