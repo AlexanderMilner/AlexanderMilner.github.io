@@ -150,14 +150,7 @@ Finally, our package contains the *randomMarkov* method which firstly calls the 
                    5       5
     o14 : Matrix ZZ  <-- ZZ
 
-Thus, if we take $$B=
-\begin{pmatrix}
-
-1 & 1 & 2 & 4 & 21 \\
-
-2 & 4 & 4 & 15 & 41
-
-\end{pmatrix}$$, then it is almost 10 times quicker to use *randomMarkov* than to compute all minimal Markov bases and choose one at random.
+Thus, if we take $$B= \begin{pmatrix} 1 & 1 & 2 & 4 & 21 \\ 2 & 4 & 4 & 15 & 41 \end{pmatrix}$$, then it is almost 10 times quicker to use *randomMarkov* than to compute all minimal Markov bases and choose one at random.
 
 In addition, if we wanted 3 minimal Markov bases of $$B$$, we can use the `NumberOfBases` option.
 
