@@ -75,6 +75,9 @@ Thus, the *fiberGraph* method in our package starts by computing the $$A$$-degre
     
     o6 : List
 
+The fundamental theorem of Markov bases, see Theorem 3.1 in {% cite DS_1998 %}, states that Markov bases are in 1-to-1 correspondence with sets of elements which connect any fiber corresponding to an $$A$$-degree. Thus, looking at the left graph from Figure 2, it is clear that $$x^2-y$$ is an indispensable element ie. every Markov basis contains it. To connect the right graph from Figure 2, our Markov basis must contain either $$xy-z$$ or $$x^3-z$$ in addition to $$x^2-y$$ and from what we calculated about $$I_A$$, these form the only two minimal Markov bases of $$A$$.
+
+In general, we can use Theorem 2.6 from {% cite CKT_2007 %} to give us an algorithm to compute minimal Markov bases. For each fiber (which is represented as a graph with edges between elements which have nontrivial intersection) we treat the connected components as nodes of a new graph for which we choose a spanning tree. Then the union over all fibers of the binomials $$x^u-x^v$$ where $$u$$ and $$v$$ are in distinct connected components connected by an edge of the spanning tree form a minimal Markov basis. Then Theorem 2.7 from {% cite CKT_2007 %} tells us that every minimal Markov basis can be found using the algorithm above.
 
 <div class="row">
     <div class="col-sm mt-2 mt-md-0">
@@ -87,10 +90,6 @@ Thus, the *fiberGraph* method in our package starts by computing the $$A$$-degre
 <div class="caption">
     Figure 2: Fibers of A corresponding to A-degrees 2 and 3.
 </div>
-
-The fundamental theorem of Markov bases, see Theorem 3.1 in {% cite DS_1998 %}, states that Markov bases are in 1-to-1 correspondence with sets of elements which connect any fiber corresponding to an $$A$$-degree. Thus, looking at the left graph from Figure 2, it is clear that $$x^2-y$$ is an indispensable element ie. every Markov basis contains it. To connect the right graph from Figure 2, our Markov basis must contain either $$xy-z$$ or $$x^3-z$$ in addition to $$x^2-y$$ and from what we calculated about $$I_A$$, these form the only two minimal Markov bases of $$A$$.
-
-In general, we can use Theorem 2.6 from {% cite CKT_2007 %} to give us an algorithm to compute minimal Markov bases. For each fiber (which is represented as a graph with edges between elements which have nontrivial intersection) we treat the connected components as nodes of a new graph for which we choose a spanning tree. Then the union over all fibers of the binomials $$x^u-x^v$$ where $$u$$ and $$v$$ are in distinct connected components connected by an edge of the spanning tree form a minimal Markov basis. Then Theorem 2.7 from {% cite CKT_2007 %} tells us that every minimal Markov basis can be found using the algorithm above.
 
 Applying the algorithm to our example, the connected components of our fibers can be calculated by changing the option `ReturnConnectedComponents` of *fiberGraph* to `true`.
 
