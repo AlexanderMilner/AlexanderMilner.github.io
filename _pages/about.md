@@ -24,11 +24,11 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I started my PhD at the University of Edinburgh in September 2024 under the supervision of [Dr Dimitra Kosta](https://sites.google.com/view/dkosta) having graduated from my Masters in Mathematics in June 2024 from Durham University. I am funded by a School of Mathematics Studentship in the Algebra and Number Theory Research Group until 2028 and my office is Room 6324 in the James Clerk Maxwell Building.
+I started my PhD at the University of Edinburgh in September 2024 under the supervision of [Dr. Dimitra Kosta](https://sites.google.com/view/dkosta) having graduated from my Masters in Mathematics in June 2024 from Durham University. I am funded by a School of Mathematics Studentship in the Algebra and Number Theory Research Group until 2028 and my office is Room 6324 in the James Clerk Maxwell Building.
+
+My current research is in toric geometry, focusing on Markov bases. I have just finished working on [a paper](https://arxiv.org/abs/2605.13662) with [Dimitra Kosta](https://sites.google.com/view/dkosta) and [Ollie Clarke]((https://sites.google.com/view/oclarke-homepage/)) about distance-reducing Markov bases in the context of bouquet decompositions and toric ideals of graphs. In addition, last year I wrote a [Macaulay2](https://macaulay2.com/) package with Ollie to compute every minimal Markov basis associated with a given configuration matrix. The associated paper is [here](https://arxiv.org/abs/2502.19031). 
 
 During my time at Durham I completed a research project funded by the London Mathematical Society Research Bursary supervised by [Dr Jack Shotton](https://www.maths.dur.ac.uk/users/jack.g.shotton/), into invariant factors of elliptic curves and coincidences of divison fields. As of 2026, we have now finished this project, written up [here](https://arxiv.org/abs/2604.21601). Whilst at Durham, I also wrote my masters thesis on the [Polynomial Method in Combinatorics](/assets/pdf/PM.pdf) under the supervision of [Dr Dan Evans](https://www.durham.ac.uk/staff/daniel-evans/).
-
-My current research is in toric geometry, focussing on Markov bases. Last year I wrote a [Macaulay2](https://macaulay2.com/) package with [Ollie Clarke](https://sites.google.com/view/oclarke-homepage/) to compute every minimal Markov basis associated with a given configuration matrix. The associated paper is [here](https://arxiv.org/abs/2502.19031). 
 
 I spend most of my spare time either playing in orchestras or conducting them and I currently hold the position of conductor of the Edinburgh University Sinfonia. Recently, I have also conducted concerts with the Peebles Orchestra, the Herriott-Watt Orchestra and the EUMS chorus.  Whilst at Durham, I conducted the Durham University Symphony Orchestra from September 2021 until June 2024 as well the Durham Choral Society, the Durham Opera Ensemble and the Durham Light Opera Group.
 
