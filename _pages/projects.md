@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Research
-permalink: /research/
+title: Projects
+permalink: /projects/
 description: These projects are still very much under construction - should be up and running shortly!
 nav: true
 nav_order: 3
