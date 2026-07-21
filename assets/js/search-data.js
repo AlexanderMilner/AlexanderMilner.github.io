@@ -9,7 +9,14 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-projects",
+  },{id: "nav-publications-and-talks",
+          title: "Publications and Talks",
+          description: "Publications and Talks",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publicationsandtalks/";
+          },
+        },{id: "nav-projects",
           title: "Projects",
           description: "These projects are still very much under construction - should be up and running shortly!",
           section: "Navigation",
@@ -22,13 +29,6 @@ ninja.data = [{
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
-          },
-        },{id: "nav-publications-and-talks",
-          title: "Publications and Talks",
-          description: "Publications and Talks",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/publicationsandtalks/";
           },
         },{id: "post-a-post-with-image-galleries",
       
