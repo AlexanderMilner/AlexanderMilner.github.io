@@ -2,7 +2,6 @@
 layout: page
 permalink: /publicationsandtalks/
 title: Publications and Talks
-description: Publications and Talks
 nav: true
 nav_order: 3
 ---
